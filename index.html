@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Freelancer - Start Bootstrap Theme</title>
+        <title>Chanadda Subdee - Portfolio</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -15,6 +15,9 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- <link href="css/scrollMagic.css" rel="stylesheet" /> -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -38,7 +41,7 @@
         <header class="masthead text-secondary text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="" />
+                <img class="masthead-avatar mb-5" src="assets/img/profilepic-png11.png" alt="" />
                 <!-- Masthead Heading-->
                 <h1 class="masthead-heading text-uppercase mb-0">Chanadda Subdee</h1>
                 <!-- Icon Divider-->
@@ -52,11 +55,23 @@
             </div>
         </header>
 
+        <script>
+          // init controller
+          var controller = new ScrollMagic.Controller();
+        </script>
+
+        
+        
+        
+
         <!-- About Section-->
+        <!-- <div id="trigger1" class="spacer s0"></div> -->
         <section class="page-section bg-primary text-white mb-0" id="about">
-            <div class="container">
+            <div class="container" id="reveal1">
+
+
                 <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">About</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0" >About</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -65,23 +80,52 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                abouttttttttzzzzztttttttttttttttttttttt
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat consequuntur, placeat odio voluptate debitis incidunt veritatis quibusdam cumque provident perferendis beatae nihil alias impedit nostrum mollitia dolor voluptatibus dolorem similique!
                 </div>
 
             </div>
         </section>
+        <script>
+          // build scene
+          new ScrollMagic.Scene({
+                    triggerElement: "#about",
+                    triggerHook: 0.9, // show, when scrolled 10% into view
+                    duration: "80%", // hide 10% before exiting view (80% + 10% from bottom)
+                    offset: 50 // move trigger to center of element
+                  })
+                  .setClassToggle("#reveal1", "visible") // add class to reveal
+                  // .addIndicators() // add indicators (requires plugin)
+                  .addTo(controller);
+        </script>
+        
 
         <!-- Portfolio Section-->
         <section class="page-section portfolio" id="portfolio">
             <div class="container">
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Work Experience</h2>
+                <div class="about-head" id="workExp">
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0" >Work Experience</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
+                </div>
+
+                <script>
+                // build scene
+                  new ScrollMagic.Scene({
+                            triggerElement: "#workExp",
+                            triggerHook: 0.9, // show, when scrolled 10% into view
+                            duration: "80%", // hide 10% before exiting view (80% + 10% from bottom)
+                            offset: 50 // move trigger to center of element
+                          })
+                          .setClassToggle("#workExp", "visible") // add class to reveal
+                          // .addIndicators() // add indicators (requires plugin)
+                          .addTo(controller);
+                </script>
+
                 <!-- Work Experience Grid Items-->
                 <div class="row justify-content-center">
                     <div class="row carousel-container">
@@ -313,5 +357,11 @@
         <script src="assets/mail/contact_me.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+
+        
+
+
+
+        
     </body>
 </html>

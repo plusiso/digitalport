@@ -54,6 +54,8 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+
+
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
@@ -68,6 +70,29 @@ body {
   text-align: left;
   background-color: #fff;
 }
+
+/* scroll magic */
+	#reveal1,#workExp {
+		opacity: 0;
+		-webkit-transform: scale(0.9);
+			 -moz-transform: scale(0.9);
+				-ms-transform: scale(0.9);
+				 -o-transform: scale(0.9);
+						transform: scale(0.9);
+		-webkit-transition: all 1s ease-in-out;
+			 -moz-transition: all 1s ease-in-out;
+				-ms-transition: all 1s ease-in-out;
+				 -o-transition: all 1s ease-in-out;
+						transition: all 1s ease-in-out;
+	}
+	#reveal1.visible, #workExp.visible {
+		opacity: 1;
+		-webkit-transform: none;
+			 -moz-transform: none;
+				-ms-transform: none;
+				 -o-transform: none;
+						transform: none;
+	}
 
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
@@ -5813,10 +5838,13 @@ a.close.disabled {
 }
 
 .carousel-container{
-  /* background-color: lightgray;
-  border: 1px solid gray; */
+  background-color: lightgray;
+  border: 1px solid gray;
   padding-bottom: 25px;
+  height: 50vh;
+  /* width: 500px; */
 }
+
 
 /* .involvemenstPic{
   position: relative;
@@ -5826,10 +5854,10 @@ a.close.disabled {
     top: -5px;}  */
 
 .involvementsPic{
-  transition: 0.3s;
+  transition: 0.4s;
 }
 .involvementsPic:hover {
-  transform: translate(0, -10px);
+  transform: translate(0, -5px);
 }
 
 
