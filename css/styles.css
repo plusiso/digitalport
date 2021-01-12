@@ -5850,6 +5850,9 @@ a.close.disabled {
   /* width: 500px; */
 }
 
+.carousel-img{
+  min-width: 100%;
+}
 
 
 
@@ -5878,6 +5881,7 @@ a.close.disabled {
 }
 .workexp-contatiner{
   padding-top: 40px;
+  padding-bottom: 30px;
   background-color: rgba(241, 241, 241, 0.8);
   border-radius: 15px;
 }
@@ -5907,7 +5911,7 @@ a.close.disabled {
   width: 100%;
   overflow: hidden;
   max-height: 400px;
-  max-width: 200px;
+  max-width: 350px;
 }
 .carousel-inner::after {
   display: block;
