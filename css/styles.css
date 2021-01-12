@@ -5838,12 +5838,20 @@ a.close.disabled {
 }
 
 .carousel-container{
-  background-color: lightgray;
-  border: 1px solid gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   padding-bottom: 25px;
   height: 50vh;
+  padding-left: 45px;
+  padding-right: 45px;
+  /* max-width: 100%; */
   /* width: 500px; */
 }
+
+
+
 
 
 /* .involvemenstPic{
@@ -5854,12 +5862,41 @@ a.close.disabled {
     top: -5px;}  */
 
 .involvementsPic{
-  transition: 0.4s;
+  text-align: center;
+  /* text-align: justify; */
+  /* width: 200px; */
+  /* transition: 0.4s; */
 }
-.involvementsPic:hover {
+/* .involvementsPic:hover {
   transform: translate(0, -5px);
+} */
+
+.interestPic{
+  padding-bottom: 10px;
+  border-radius: 10%;
+  /* display: block; */
+}
+.workexp-contatiner{
+  padding-top: 40px;
+  background-color: rgba(241, 241, 241, 0.8);
+  border-radius: 15px;
 }
 
+.about-container{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: rgba(241, 241, 241, 0.8);
+  border-radius: 15px;
+
+}
+
+.about-text{
+  display: flex;
+  justify-content: center;
+  padding-left: 120px;
+  padding-right: 120px;
+  color: #2c3e50;
+}
 
 .carousel.pointer-event {
   touch-action: pan-y;
@@ -5887,6 +5924,7 @@ a.close.disabled {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
+  
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
@@ -10033,7 +10071,7 @@ h3 {
   }
 }
 .page-section {
-  padding: 6rem 0;
+  padding: 6rem;
 }
 .page-section .page-section-heading {
   font-size: 2.25rem;
