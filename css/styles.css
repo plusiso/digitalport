@@ -71,28 +71,7 @@ body {
   background-color: #fff;
 }
 
-/* scroll magic */
-	#reveal1,#workExp {
-		opacity: 0;
-		-webkit-transform: scale(0.9);
-			 -moz-transform: scale(0.9);
-				-ms-transform: scale(0.9);
-				 -o-transform: scale(0.9);
-						transform: scale(0.9);
-		-webkit-transition: all 1s ease-in-out;
-			 -moz-transition: all 1s ease-in-out;
-				-ms-transition: all 1s ease-in-out;
-				 -o-transition: all 1s ease-in-out;
-						transition: all 1s ease-in-out;
-	}
-	#reveal1.visible, #workExp.visible {
-		opacity: 1;
-		-webkit-transform: none;
-			 -moz-transform: none;
-				-ms-transform: none;
-				 -o-transform: none;
-						transform: none;
-	}
+
 
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
@@ -5886,6 +5865,15 @@ a.close.disabled {
   border-radius: 15px;
 }
 
+.undergrad-contatiner{
+  padding-top: 40px;
+  padding-bottom: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+
+}
+
+
 .about-container{
   padding-top: 40px;
   padding-bottom: 40px;
@@ -6420,6 +6408,7 @@ button.bg-dark:focus {
 }
 
 @media (min-width: 576px) {
+
   .d-sm-none {
     display: none !important;
   }
@@ -6455,6 +6444,7 @@ button.bg-dark:focus {
   .d-sm-inline-flex {
     display: inline-flex !important;
   }
+  
 }
 @media (min-width: 768px) {
   .d-md-none {
@@ -7192,6 +7182,7 @@ button.bg-dark:focus {
     align-self: stretch !important;
   }
 }
+
 @media (min-width: 1200px) {
   .flex-xl-row {
     flex-direction: row !important;
@@ -10077,10 +10068,15 @@ h3 {
 .page-section {
   padding: 6rem;
 }
+
 .page-section .page-section-heading {
   font-size: 2.25rem;
   line-height: 2rem;
 }
+.page-section-research{
+  padding-top: 0rem !important;
+}
+
 @media (min-width: 992px) {
   .page-section .page-section-heading {
     font-size: 3rem;
@@ -10338,4 +10334,28 @@ form .row:first-child .floating-label-form-group {
 
 .stripeBackground{
   background-color: #fbe8a6;
+}
+
+
+/* scroll magic */
+#reveal1,#workExp {
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+     -moz-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+       -o-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: all 1s ease-in-out;
+     -moz-transition: all 1s ease-in-out;
+      -ms-transition: all 1s ease-in-out;
+       -o-transition: all 1s ease-in-out;
+          transition: all 1s ease-in-out;
+}
+#reveal1.visible, #workExp.visible {
+  opacity: 1;
+  -webkit-transform: none;
+     -moz-transform: none;
+      -ms-transform: none;
+       -o-transform: none;
+          transform: none;
 }
