@@ -6408,7 +6408,7 @@ button.bg-dark:focus {
 }
 
 @media (min-width: 576px) {
-
+   
   .d-sm-none {
     display: none !important;
   }
@@ -6446,7 +6446,14 @@ button.bg-dark:focus {
   }
   
 }
+@media (max-width: 576px) {
+}
 @media (min-width: 768px) {
+  .carousel-wrapper{
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  
   .d-md-none {
     display: none !important;
   }
@@ -6481,6 +6488,27 @@ button.bg-dark:focus {
 
   .d-md-inline-flex {
     display: inline-flex !important;
+  }
+}
+@media (max-width: 768px) {
+  .carousel-inner{
+    height: 220px;
+    width: 175px;
+  }
+  .carousel-container{
+    padding-bottom: 0px!;
+    height: 32vh;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #carousel-desc{
+    font-size: 20px;
+  }
+  #carousel-header{
+    font-size: 26px;
+  }
+  .carousel-container2{
+    height: 30vh;
   }
 }
 @media (min-width: 992px) {
