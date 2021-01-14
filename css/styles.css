@@ -6447,6 +6447,10 @@ button.bg-dark:focus {
   
 }
 @media (max-width: 576px) {
+  .page-section{
+    padding: 2rem !important;
+  }
+
 }
 @media (min-width: 768px) {
   .carousel-wrapper{
